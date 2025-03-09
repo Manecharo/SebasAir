@@ -64,6 +64,15 @@ interface FlightDetails extends Flight {
   distance: number;
 }
 
+interface FilterCriteria {
+  registration?: string;
+  aircraftType?: string;
+  airline?: string;
+  status?: string;
+  origin?: string;
+  destination?: string;
+}
+
 // Component to fly to a selected flight
 const FlyToMarker = ({ flight }: { flight: Flight | null }) => {
   const map = useMap();

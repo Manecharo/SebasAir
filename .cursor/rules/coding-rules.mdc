@@ -1,0 +1,22 @@
+---
+description: coding and bug fixing
+globs: 
+alwaysApply: false
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+The rules used for Vibe coding are as follows:
+
+*   Always prefer simple solutions.
+*   Avoid duplication of code whenever possible, by checking for other areas of the codebase that might already have similar code and functionality.
+*   Take into account separate Dev, test, and prod environments.
+*   Be careful to only make changes that are requested or you are confident are well understood and related to the change being requested; focus on the specific task.
+*   When fixing an issue or bug, do not introduce a new pattern or technology without first exhausting all options for the existing implementation, and if you finally do, make sure to remove the old implementation afterwards.
+*   Keep the code base very clean and organized.
+*   Avoid writing scripts and files if possible, especially if the script is likely only to be run once. If a script is created, either write the script and execute it inline, or delete the file when done.
+*   Avoid having files over 200-300 lines of code; refactor at that point.
+*   Do not use mock data for Dev or prod, only in test environments; never add stubbing or fake data patterns to code that affects the Dev and prod environments.
+*   Do not overwrite the .env file before first asking and confirming.
