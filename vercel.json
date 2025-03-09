@@ -22,8 +22,5 @@
       "src": "/(.*)",
       "dest": "frontend/dist/$1"
     }
-  ],
-  "env": {
-    "FLIGHTRADAR_API_KEY": "@flightradar_api_key"
-  }
+  ]
 } 
